@@ -1,0 +1,26 @@
+
+import java.util.*;
+public class A_1_7
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number within the known conditions");
+        int n=sc.nextInt();
+        int a=n;
+        int d=0;
+        int inv=0;
+        while(a>0)
+        {
+            d++;
+            a=a/10;
+        }
+        for(int i=1;i<=d;i++)
+        {
+            int ld=n%10;
+            inv=inv+i*((int)Math.pow(10,ld-1));
+            n=n/10;
+        }
+        System.out.println("The inverted number is "+inv);
+    }
+}
