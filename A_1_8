@@ -17,6 +17,10 @@ public class A_1_8
            d++;
            b=b/10;
         }
+        int p=Math.abs(k);
+        if(k>0)
+        {
+        
         //System.out.println(d);
         int h=n%((int)(Math.pow(10,k)));
         int l=n/((int)(Math.pow(10,k)));
@@ -25,4 +29,14 @@ public class A_1_8
         r=(h*(int)Math.pow(10,(d-k)))+l;
         System.out.println("Rotated number= "+r);
     }
+    else
+    {
+        int h=n/((int)(Math.pow(10,d-p)));
+        int l=n%((int)(Math.pow(10,d-p)));
+        System.out.println(h);
+        System.out.println(l);
+        r=(l*(int)Math.pow(10,(p)))+h;
+        System.out.println("Rotated number= "+r);
+    }
+}
 }
