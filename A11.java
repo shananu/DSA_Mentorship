@@ -1,9 +1,7 @@
-
-
 import java.util.*;
-public class z
+public class A11
 {
-    void main()
+    public static void main(String[] args)
     {   
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Height of Z");
