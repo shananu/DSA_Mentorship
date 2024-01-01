@@ -1,10 +1,10 @@
 
 import java.util.*;
-public class A_1_8
+public class A18
 {
-    public static void main()
+    public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
+        try(Scanner sc=new Scanner(System.in)){
         System.out.println("Enter the number");
         int n=sc.nextInt();
         System.out.println("Enter number of times you want to rotate");
@@ -38,5 +38,5 @@ public class A_1_8
         r=(l*(int)Math.pow(10,(p)))+h;
         System.out.println("Rotated number= "+r);
     }
-}
+}}
 }
