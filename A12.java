@@ -4,7 +4,7 @@ public class A12
 {
     public static void main(String args[])
     {
-        Scanner sc= new Scanner(System.in);
+        try(Scanner sc= new Scanner(System.in)){
         /*System.out.println("Enter maximum marks");
         double mm= sc.nextDouble();*/
         System.out.println("Enter students's marks");
@@ -23,7 +23,7 @@ public class A12
         else
         System.out.println("Invalid Input");
     }
-    
+} 
 }
 
 //grading system
