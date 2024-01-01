@@ -1,11 +1,12 @@
 
 import java.util.*;
-public class PrimeTillN
+public class A14
 {
     
-    public static void main()
+    public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
+        try(Scanner sc=new Scanner(System.in))
+        {
         System.out.println("Enter the number");
         int n=sc.nextInt();
         for(int i=2;i<=n;i++)
@@ -18,6 +19,7 @@ public class PrimeTillN
             }
             if(d==0)
             System.out.println(i);
+        }
         }
     }
 }
