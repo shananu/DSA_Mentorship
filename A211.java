@@ -12,7 +12,7 @@ public class A211
             {
                 for(int j=1;j<=i;j++)
                 {
-                    System.out.print(d++);
+                    System.out.print(d+++"  ");
                 }
                 System.out.println();
             }
