@@ -1,10 +1,10 @@
 
 import java.util.*;
-public class A_1_10
+public class A110
 {
-    public static void main()
+    public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
+        try(Scanner sc=new Scanner(System.in)){
         System.out.println("Enter the number");
         int n=sc.nextInt();
         System.out.println("The prime factors are:");
@@ -16,5 +16,5 @@ public class A_1_10
                 n=n/i;
             }
         }
-    }
+    }}
 }
