@@ -1,13 +1,13 @@
-
-
 import java.util.*;
-public class prime
+public class A13
 {
-    public static void main()
+    public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int c=0;
+        try(Scanner sc=new Scanner(System.in))
+        {
+            System.out.println("Enter the number");
+            int a=sc.nextInt();
+            int c=0;
         if(a!=2 && a%2==0)
         {
             System.out.println("Not Prime");
@@ -25,6 +25,7 @@ public class prime
           System.out.println("Prime");
           else
           System.out.println("Not Prime");
+        }
         }
     }
 }
