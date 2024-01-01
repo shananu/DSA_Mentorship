@@ -1,10 +1,11 @@
 import java.util.*;
-public class A_1_5
+public class A15
 {
-    public static void main()
+    public static void main(String[] args)
     {
-       Scanner sc=new Scanner(System.in);
-       System.out.println("Enter the number");
+       try(Scanner sc=new Scanner(System.in))
+       {
+        System.out.println("Enter the number");
        int n= sc.nextInt();
        int d=1;
        while(n>9)
@@ -13,5 +14,7 @@ public class A_1_5
            n=n/10;
         }
        System.out.println("The number of digits "+d);
+       }
+       
     }
 }
