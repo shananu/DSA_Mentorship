@@ -1,10 +1,10 @@
 
 import java.util.*;
-public class A_1_7
+public class A17
 {
-    public static void main()
+    public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
+        try(Scanner sc=new Scanner(System.in)){
         System.out.println("Enter a number within the known conditions");
         int n=sc.nextInt();
         int a=n;
@@ -22,5 +22,5 @@ public class A_1_7
             n=n/10;
         }
         System.out.println("The inverted number is "+inv);
-    }
+    }}
 }
