@@ -25,8 +25,7 @@ public class A35
             }
             for(int i=j;i<n;i++)
             {
-                arr[j]=0;
-                j++;
+                arr[i]=0;
             }
             for(int i=0;i<n;i++)
             {
